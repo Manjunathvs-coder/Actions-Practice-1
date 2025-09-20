@@ -1,8 +1,0 @@
-name: deploy-output
-on: issues
-jobs:
-  output-issue:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Output Events
-        run: echo "${{toJson(github.event)}}"
